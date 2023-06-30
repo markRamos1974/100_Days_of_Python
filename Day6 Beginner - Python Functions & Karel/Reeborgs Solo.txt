@@ -1,0 +1,35 @@
+#10x10 grid
+# dimension = 10 
+# tiles_traveled = 0
+# def revolve():
+#     global tiles_traveled
+#     for position in range(0, dimension - 1):
+#         tiles_traveled += 1
+#         move()
+        
+# revolve()
+
+# while True:
+#     global tiles_traveled
+#     if tiles_traveled % 9 == 0:
+#         turn_left()
+#         revolve()
+#     else:
+#         revolve()
+
+def turn_right():
+    for _ in range(0, 3):
+        turn_left()
+
+turn_left()
+
+for _ in range(0,4):
+    move()
+    turn_right()
+
+
+
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Alone&url=worlds%2Ftutorial_en%2Falone.json
+    
+    
+    

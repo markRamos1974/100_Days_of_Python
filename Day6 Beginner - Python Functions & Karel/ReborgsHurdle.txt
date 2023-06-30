@@ -1,0 +1,104 @@
+# Hurlde 1 and 2
+# For Loop
+def turn_right():
+    for _ in range(0, 3):
+        turn_left()
+def jump_hurdle():
+        turn_left()
+        move()
+        turn_right()
+        move()
+        turn_right()
+        move()
+        turn_left()
+        
+for _ in range(0, 6):
+    move()     
+    jump_hurdle()
+    
+    
+
+# While Loop
+
+def turn_right():
+    for _ in range(0, 3):
+        turn_left()
+def jump_hurdle():
+        turn_left()
+        move()
+        turn_right()
+        move()
+        turn_right()
+        move()
+        turn_left()
+while at_goal() == False:
+    move()     
+    jump_hurdle()
+    
+
+# Hurlde 3
+def turn_right():
+    for _ in range(0, 3):
+        turn_left()
+def jump_hurdle():
+        turn_left()
+        move()
+        turn_right()
+        move()
+        turn_right()
+        move()
+        turn_left()
+while at_goal() == False:
+    if front_is_clear():
+        move()
+    else:
+        jump_hurdle()
+    
+    
+# Hurdle 4
+facing_north = False
+facing_south = False
+def turn_right():
+    for _ in range(0, 3):
+        turn_left()
+        
+def jump_hurdle():
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+        
+def climb_up():
+    global facing_north
+    turn_left()
+    facing_north = True
+    while right_is_clear() == False:
+        move()
+        
+def climb_down():
+    global facing_south
+    turn_right()
+    facing_south = True
+    move()
+    turn_right()
+    while front_is_clear():
+        move()
+        
+while at_goal() == False:
+   global facing_south, facing_north
+   if front_is_clear() == False and right_is_clear() == False:
+       climb_up()
+   elif facing_north == True and right_is_clear() == True:
+       climb_down()
+       facing_north = False
+       turn_left()
+   else:
+        move()
+    
+
+
+
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json
