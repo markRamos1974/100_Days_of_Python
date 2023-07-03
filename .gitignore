@@ -1,2 +1,5 @@
 /Thonny
+/__pycache__
+
 *.pdf
+*.pyc
