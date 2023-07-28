@@ -25,7 +25,7 @@ def turn_right():
 def turn_left():
     snake.head.setheading(180)
 
-speed = [0.1, 0.095, 0.009]
+speed = [0.07, 0.05, 0.03, 0.02, 0.01]
 speed_index = 0
 isGameOver = False
 player_score = 0
@@ -38,10 +38,14 @@ while not(isGameOver):
         player_score += 1
         snake.add_snake_segment()
         score_tracker.show_score(player_score=player_score)
+        if player_score % 5 == 0 and player_score != 0 and speed_index != 3:
+            speed_index += 1
 
 
 
     screen.update()
+  
+    
     time.sleep(speed[speed_index])
 
     for segment in snake.snake_segments:
