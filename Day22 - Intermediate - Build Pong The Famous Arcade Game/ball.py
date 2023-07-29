@@ -10,8 +10,8 @@ class Ball(Turtle):
         self.color("red")
    
         self.penup()
-        position = [180, 0, 150, 45, 300, 200]
-        self.setheading(random.choice(position))
+        self.positions = [180, 0]
+        self.setheading(random.choice(self.positions))
 
     def move(self, player_paddle, computer_paddle):
 
@@ -73,7 +73,6 @@ class Ball(Turtle):
 
         self.prev_x_position = self.xcor()
         self.prev_y_position = self.ycor()
-
         self.forward(20)
 
 

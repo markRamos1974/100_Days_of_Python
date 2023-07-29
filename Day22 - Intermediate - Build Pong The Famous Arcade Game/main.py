@@ -2,7 +2,7 @@ from turtle import Turtle, Screen
 from paddle import Paddle
 from scoreboard import Scoreboard
 from ball import Ball
-
+import random
 import time
 
 screen = Screen()
@@ -44,6 +44,8 @@ def move_computer_paddle():
         else:
             computer_paddle.direction = "Up"
 
+            
+
 def divide_board():
     division_line.penup()
     division_line.goto(0, -400)
@@ -54,24 +56,27 @@ def divide_board():
         division_line.forward(30)
         division_line.pendown()
 
-screen.onkey(key="Up", fun=player_paddle.paddle_move_up)
-screen.onkey(key="Down", fun=player_paddle.paddle_move_down)
+screen.onkey(key="Up", fun=computer_paddle.paddle_move_up)
+screen.onkey(key="Down", fun=computer_paddle.paddle_move_down)
+screen.onkey(key="w", fun=player_paddle.paddle_move_up)
+screen.onkey(key="s", fun=player_paddle.paddle_move_down)
 divide_board()
-position = [180, 0, 150, 45, 300, 200]
+position = [180, 0]
 while not(isGameOver):
-    move_computer_paddle()
+    # move_computer_paddle()
+
     ball.move(player_paddle=player_paddle, computer_paddle=computer_paddle)
     
     if ball.xcor() < -600:
         ball.goto(0, 0)
         computer_score.update_score()
- 
+        ball.setheading(random.choice(position))
         screen.update()
         time.sleep(3)
     elif ball.xcor() > 600:
         ball.goto(0, 0)
         player_score.update_score()
-        
+        ball.setheading(random.choice(position))
         screen.update()
         time.sleep(3)
 

@@ -12,7 +12,7 @@ class Paddle:
         self.tail = self.paddle_segments[-1]
         self.tail.setheading(270)
         self.direction = "Up"
-        self.move_value = 150
+        self.move_value = 40
 
         
 
