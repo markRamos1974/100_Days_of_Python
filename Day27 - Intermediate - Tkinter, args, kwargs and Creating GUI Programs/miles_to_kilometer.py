@@ -21,7 +21,7 @@ km.place(x=(200 + (answer_width / 2)), y=305)
 
 border_color = Frame(window, background="red")
 
-entry = Entry(width=18, font=("Morganite", 42, "bold"), highlightbackground="black", highlightthickness=6, justify="center", insertbackground="black")
+entry = Entry(width=18, font=("Morganite", 42, "bold"), highlightbackground="black", highlightthickness=6, justify="center")
 entry.place(x=130, y=17)
 
 
