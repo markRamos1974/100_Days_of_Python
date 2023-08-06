@@ -38,26 +38,5 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
 
-# password = ""
-# password_char = []
-# for letter in range(0, nr_letters):
-#   random_letter = random.choice(letters)
-#   password_char.append(random_letter)
-  
-# for symbol in range(0, nr_symbols):
-#   random_symbol = random.choice(symbols)
-#   password_char.append(random_symbol)
-
-# for symbol in range(0, nr_numbers):
-#   random_number = random.choice(numbers)
-#   password_char.append(random_number)
-  
-# random.shuffle(password_char)
-
-# for character in password_char:
-#   password += character
-
-# print(password)
-
 
 #Trial random module
