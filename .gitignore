@@ -3,3 +3,5 @@
 __MACOSX
 *.pdf
 *.pyc
+*.env
+/env

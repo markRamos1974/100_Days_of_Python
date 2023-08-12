@@ -1,0 +1,44 @@
+{
+  "coord": {
+    "lon": 121.774,
+    "lat": 12.8797
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 302.32,
+    "feels_like": 307.48,
+    "temp_min": 302.32,
+    "temp_max": 302.32,
+    "pressure": 1008,
+    "humidity": 76,
+    "sea_level": 1008,
+    "grnd_level": 1008
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.44,
+    "deg": 308,
+    "gust": 2.8
+  },
+  "clouds": {
+    "all": 97
+  },
+  "dt": 1691839858,
+  "sys": {
+    "country": "PH",
+    "sunrise": 1691790024,
+    "sunset": 1691835354
+  },
+  "timezone": 28800,
+  "id": 1694008,
+  "name": "Philippines",
+  "cod": 200
+}
