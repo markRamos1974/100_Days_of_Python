@@ -24,7 +24,6 @@ for data in google_sheet_data:
 
     lowest_price_sheet = float(data["lowestPrice"])
     flight_price = flight_deals.price_GBP
-
     flight_from = flight_deals.city_from
     flight_country = flight_deals.city_to
     
