@@ -76,5 +76,5 @@ for data in google_sheet_data_prices:
 
         print("sending Email...")
         notif.send_email(message_body, stop_over_message, stop_overs)
-        print("sending Email...")
+        print("sending SMS...")
         send_message()
