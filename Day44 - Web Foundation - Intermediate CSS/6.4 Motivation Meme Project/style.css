@@ -1,0 +1,42 @@
+*{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    
+}   
+
+body{
+    background-color: black;
+   
+}
+
+div{
+    text-align: center;
+}
+
+div > h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+div > p {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 100px;
+    border: 5px solid white;
+}
